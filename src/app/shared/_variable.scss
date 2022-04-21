@@ -1,0 +1,30 @@
+$primary-font-color: #fff;
+$secondary-font-color: #FFC525;
+$default-font-color: #000;
+
+$primary-header-color: #0078BA;
+
+$primary-bg-color: transparent;
+
+$primary-btn-color: #F9BE02;
+
+
+
+@mixin primary-btn {
+    @include valai-btn;
+    cursor: pointer;
+    color: $default-font-color;
+    background-color: $primary-btn-color;
+    margin-right: 10px;
+}
+
+@mixin valai-btn {
+    flex: 1;
+    color: $primary-font-color;
+    border: 2px solid $primary-btn-color;
+    border-radius: 3px;
+    padding: 12px 24px;
+    background: transparent;
+    font-weight: 500;
+    font-size: 15px;
+}

@@ -1,0 +1,111 @@
+@import "./../shared/variable";
+
+.footer-container {
+    background: url('./../../assets/img/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+
+    .footer-wrapper {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1140px;
+
+        section {
+            flex: 1;
+            padding: 0 10px; 
+
+            nav {
+                flex: 4;
+                text-align: left;
+    
+                ul {
+                    padding-left: 0;
+                    margin: 15px 0 0 0;
+                    
+                    li {
+                        list-style: none !important;
+                        padding: 10px;
+                        width: 100%;
+
+                        a {
+                            color: $primary-font-color;
+                            font-size: 15px;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                            text-decoration: none;;
+                        }
+                    }
+                }
+            }
+
+            img {
+                height: 35px;
+                margin-top: 25px;
+                width: 120px;
+            }
+
+            div {
+                margin-top: 15px;
+                color: $primary-font-color;
+            }
+
+            label {
+                color: $secondary-font-color;
+                display: block;
+                font-weight: 700;
+                margin-top: 25px;
+                margin-bottom: 30px;
+            }
+
+            .contact-info {
+                cursor: pointer;
+                margin-bottom: 20px;
+
+                i {
+                    color: $primary-font-color;
+                    font-size: 18px;
+                    margin-right: 4px;
+                }
+
+                span { 
+                    color: $primary-font-color;
+                }
+                a {
+                    text-decoration: none;
+                    color: $secondary-font-color;
+                }
+            }
+
+            i.social {
+                color: $primary-font-color;
+                cursor: pointer;
+                margin-left: 30px;
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 720px) {
+    .footer-container {
+        .footer-wrapper {
+            flex-flow: column;
+
+            section {
+                width: 100%;
+                margin-bottom: 20px;
+
+                nav ul {
+                    li {
+                        padding: 4px 10px;
+                        a {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

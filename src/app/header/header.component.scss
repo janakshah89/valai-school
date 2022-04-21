@@ -1,0 +1,109 @@
+@import "./../shared/variable";
+
+.header-container {
+    background: $primary-header-color;
+    
+    .header-wrapper {
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+        max-width: 1140px;
+        padding: 20px 30px;
+
+        .logo {
+            flex: 1;
+
+            img {
+                width: 120px;
+                height: 35px;
+            }
+        }
+
+        .nav-links {
+            flex: 4;
+            text-align: left;
+
+            ul {
+                display: flex;
+                padding-left: 0;
+                
+                li {
+                    flex: 1;
+                    list-style: none !important;
+                    margin: 0;
+                    text-align: center;
+
+                    a {
+                        color: $primary-font-color;
+                        font-size: 15px;
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        text-decoration: none;;
+                    }
+                }
+            }
+        }
+        
+        .btn-container {
+            flex: 1;
+            text-align: right;
+
+            button {
+                @include primary-btn;
+            }
+        }
+    }
+}
+
+
+/* Style the navigation menu */
+.topnav {
+    display: none;
+    overflow: hidden;
+    background-color: $primary-header-color;
+    position: relative;
+  
+    #myLinks {
+        display: none;
+    }
+  
+    a {
+        color: $primary-font-color;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+
+        &.logo {
+            text-align: left;
+        }
+    
+        &.icon {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 24px;
+        }
+  
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+  @media only screen and (max-width: 720px) {
+      .topnav {
+          display: block;
+
+          img {
+              width: 120px;
+              height: 30px;
+          }
+      }
+
+      .header-container {
+          display: none;
+      }
+  }
