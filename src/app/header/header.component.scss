@@ -2,7 +2,7 @@
 
 .header-container {
     background: $primary-header-color;
-    
+
     .header-wrapper {
         align-items: center;
         display: flex;
@@ -26,7 +26,7 @@
             ul {
                 display: flex;
                 padding-left: 0;
-                
+
                 li {
                     flex: 1;
                     list-style: none !important;
@@ -43,7 +43,7 @@
                 }
             }
         }
-        
+
         .btn-container {
             flex: 1;
             text-align: right;
@@ -62,11 +62,11 @@
     overflow: hidden;
     background-color: $primary-header-color;
     position: relative;
-  
+
     #myLinks {
         display: none;
     }
-  
+
     a {
         color: $primary-font-color;
         padding: 14px 16px;
@@ -78,7 +78,7 @@
         &.logo {
             text-align: left;
         }
-    
+
         &.icon {
             display: block;
             position: absolute;
@@ -86,7 +86,7 @@
             top: 0;
             font-size: 24px;
         }
-  
+
         &:hover {
             color: black;
         }

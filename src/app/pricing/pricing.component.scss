@@ -1,0 +1,196 @@
+@import "./../shared/variable";
+.pricing-container {
+  .pricing-header {
+    padding: 1rem;
+    text-align: center;
+    background-color: aliceblue;
+    h2 {
+      font-size: 30px;
+      color: #284152;
+    }
+    p {
+      font-size: 19px;
+    }
+  }
+
+  .pricing-card-container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1140px;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+    .pricing-card {
+      flex: 1;
+      background-color: $pricing-card-bg-color;
+      margin-top: 1.5rem;
+      min-width: 279px;
+      .pricing-card-header {
+        background-color: $primary-header-color;
+        margin-top: 0 !important;
+        color: $primary-font-color;
+        font-size: 24px;
+        padding: 1rem;
+        text-align: center;
+        p {
+          margin-top: 0;
+          font-size: small;
+        }
+
+        h2 {
+          color: $primary-font-color;
+          font-size: 24px;
+          text-align: center;
+          margin-top: 0;
+        }
+      }
+
+      .pricing-card-price {
+        max-width: fit-content;
+        position: relative;
+        font-size: 64px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+        color: #555555;
+        margin: 0 auto;
+        text-align: center;
+        &::before {
+          content: "$";
+          position: absolute;
+          font-size: 20px;
+          right: 100%;
+        }
+      }
+
+      .price-text {
+        margin-top: 0;
+        color: #555555;
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+    .popular {
+      position: relative;
+      overflow: hidden;
+      &::after {
+        content: "Popular";
+        position: absolute;
+        font-size: 17px;
+        background-color: #ff0061;
+        color: white;
+        top: 2%;
+        right: -7%;
+        transform: rotate(50deg);
+        width: 80px;
+        text-align: center;
+        padding: 0.2rem;
+      }
+    }
+    .pricing-details-text {
+      display: flex;
+      color: #555555;
+      margin-left: 3px;
+      span {
+        margin-top: 3.5px;
+        margin-left: 3.5px;
+      }
+    }
+    .free-sign-up-btn-container {
+      padding: 1rem 1rem 2rem;
+      .free-sign-up-btn {
+        background-color: $primary-header-color;
+        color: white;
+        border: none;
+        padding: 0.4rem;
+        border-radius: 5px;
+      }
+    }
+  }
+  .sign-up-free-bg {
+    background-color: #284152;
+
+    .sign-up-free-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1140px;
+      color: white;
+      font-size: 17px;
+      margin: auto;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+      padding: 1rem;
+    }
+    p{
+      max-width: 60%;
+    }
+    button{
+      max-width: 30%;
+      background-color: $primary-btn-color;
+      height: 3rem;
+      margin: auto 0;
+    }
+  }
+
+  .pricing-footer-bg{
+    background-color: aliceblue;
+    .pricing-footer-container{
+      padding: 1rem;
+      max-width: 1140px;
+      margin: auto;
+      text-align: center;
+      color: #284152;
+      h2{
+        font-size: 30px;
+        margin-top: 0;
+      }
+      p{
+        font-size: 25px;
+        a{
+          color: $secondary-font-color;
+        }
+      }
+    }
+
+    .pricing-features-container{
+      max-width: 1140px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      p{
+        display: flex;
+        gap: 3.5px;
+        font-size: 20px;
+        color: #284152;
+        font-weight: 400;
+        mat-icon{
+          color: $secondary-font-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1064px){
+  .sign-up-free-container{
+    flex-direction: column;
+    gap: 0.8rem;
+    p{
+      margin: auto;
+    }
+    button{
+      margin: auto !important;
+    }
+  }
+}
+@media (max-width: 852px){
+  .pricing-card-container{
+    justify-content: space-between;
+  }
+  .pricing-features-container{
+    flex-direction: column;
+    p{
+      flex: 1;
+    }
+  }
+}
