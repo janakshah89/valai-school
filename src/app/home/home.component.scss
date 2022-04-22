@@ -124,4 +124,25 @@
         }
 
     }
+
+    .why-valai {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1140px;
+        padding: 20px 30px 80px;
+
+        .title {
+            font-size: 40px;
+            margin: 40px auto;
+            line-height: 1;
+
+            .valai-color {
+                color: $valai-color;
+            }
+        }
+        img {
+            margin: 0 auto;
+            height: 500px;
+        }
+    }
 }

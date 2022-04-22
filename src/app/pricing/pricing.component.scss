@@ -5,7 +5,7 @@
   .pricing-header {
     padding: 60px 30px;
     text-align: center;
-    background-color: aliceblue;
+    background-color: $pricing-card-bg-color;
     color: $dark-font-color;
 
     h2 {
@@ -101,44 +101,55 @@
   }
 
   .sign-up-free-bg {
-    background-color: #284152;
-
+    background-color: $dark-bg-color;
+    
     .sign-up-free-container {
-      display: flex;
-      justify-content: space-between;
       max-width: 1140px;
+      margin: 0 auto;
+      padding: 40px 0;
+      display: flex;
       color: white;
-      font-size: 17px;
-      margin: auto;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-        "Helvetica Neue", sans-serif;
-      padding: 1rem;
+      align-items: center;
     }
-    p{
-      max-width: 60%;
+
+    div {
+      font-size: 16px;
+      line-height: 24px;
+      flex: 6;
+      margin: 0;
+      text-align: center;
+      justify-content: center;
+      padding: 0 30px;
     }
+
     button{
-      max-width: 30%;
-      background-color: $primary-btn-color;
-      height: 3rem;
-      margin: auto 0;
+      @include primary-btn;
+      margin: 0 auto;
+      padding: 15px 20px;
     }
   }
 
   .pricing-footer-bg{
-    background-color: aliceblue;
+    background-color: $light-bg-color;
+
     .pricing-footer-container{
-      padding: 1rem;
+      padding: 50px 0 80px;
       max-width: 1140px;
       margin: auto;
       text-align: center;
-      color: #284152;
+      color: $dark-bg-color;
+
       h2{
         font-size: 30px;
-        margin-top: 0;
+        line-height: 30px;
+        font-weight: 500;
       }
+      
       p{
-        font-size: 20px;
+        font-size: 25px;
+        line-height: 1.5;
+        padding: 0 40px;
+
         a{
           color: $secondary-font-color;
         }
@@ -147,15 +158,20 @@
 
     .pricing-features-container{
       max-width: 1140px;
-      margin: auto;
+      margin: 0 auto;
       display: flex;
       justify-content: space-between;
+      padding-bottom: 40px;
+
       p{
         display: flex;
         gap: 3.5px;
         font-size: 15px;
-        color: #284152;
+        color: $dark-bg-color;
         font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 30px;
         mat-icon{
           color: $secondary-font-color;
         }
