@@ -12,7 +12,7 @@
             max-width: 1140px;
             padding: 20px 30px;
             align-content: center;
-    align-items: center;
+            align-items: center;
 
             .left-pane {
                 flex: 1;
@@ -44,7 +44,6 @@
                     .primary-btn {
                         @include primary-btn;
                     }
-
                 }
             }
 
