@@ -16,13 +16,13 @@
 
             .left-pane {
                 flex: 1;
-                
+
                 h2  {
                     margin: 0;
                     font-size: 54px;
                     color: $primary-font-color;
                     line-height: 1;
-                    margin-bottom: 20px;    
+                    margin-bottom: 20px;
                 }
 
                 h6 {
@@ -36,7 +36,7 @@
                     flex: 1;
                     justify-content: space-evenly;
                     align-items: center;
-        
+
                     button {
                         @include valai-btn;
                     }
@@ -93,7 +93,7 @@
             display: flex;
             align-items: center;
 
-            .admin-sw-details{ 
+            .admin-sw-details{
                 color: $primary-font-color;
                 flex: 1;
                 padding: 0 30px;
@@ -104,7 +104,7 @@
                     line-height: 40px;
                     margin-bottom: 30px;
                 }
-            
+
                 .desc {
                     font-size: 18px;
                     line-height: 27px;
@@ -137,7 +137,7 @@
             line-height: 1;
 
             .valai-color {
-                color: $valai-color;
+                // color: $valai-color;
             }
         }
         img {
