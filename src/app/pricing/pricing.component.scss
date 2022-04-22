@@ -1,112 +1,105 @@
 @import "./../shared/variable";
+
 .pricing-container {
+
   .pricing-header {
-    padding: 1rem;
+    padding: 60px 30px;
     text-align: center;
     background-color: aliceblue;
+    color: $dark-font-color;
+
     h2 {
       font-size: 30px;
-      color: #284152;
     }
+
     p {
       font-size: 19px;
     }
   }
 
-  .pricing-card-container {
+  .pricing-banner {
     display: flex;
     margin: 0 auto;
     max-width: 1140px;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    padding: 20px 30px;
 
-    .pricing-card {
-      flex: 1;
+    .banner {
       background-color: $pricing-card-bg-color;
-      margin-top: 1.5rem;
-      min-width: 279px;
-      .pricing-card-header {
-        background-color: $primary-header-color;
-        margin-top: 0 !important;
-        color: $primary-font-color;
-        font-size: 24px;
-        padding: 1rem;
-        text-align: center;
-        p {
-          margin-top: 0;
-          font-size: small;
-        }
+      flex: 1;
+      margin-right: 20px;
 
-        h2 {
-          color: $primary-font-color;
-          font-size: 24px;
-          text-align: center;
-          margin-top: 0;
-        }
+      &:last-child {
+        margin: 0;
       }
 
-      .pricing-card-price {
-        max-width: fit-content;
+      &:nth-child(3) {
         position: relative;
-        font-size: 64px;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-          "Helvetica Neue", sans-serif;
-        color: #555555;
-        margin: 0 auto;
-        text-align: center;
-        &::before {
-          content: "$";
+        overflow: hidden;
+
+        .sache {
+          background-color: $sache-bg-color;
+          color: $primary-font-color;
+          text-transform: uppercase;
+          font-weight: 800;
+          font-size: 13px;
+          text-align: center;
           position: absolute;
-          font-size: 20px;
-          right: 100%;
+          width: 170px;
+          height: 20px;
+          padding: 5px 0;
+          transform: rotate(45deg);
+          right: -50px;
+          top: 22px;
+        }
+      }
+      
+      .header {
+        padding: 20px 0;
+        background-color: $seconday-btn-color;
+        color: $primary-font-color;
+        text-transform: uppercase;
+        text-align: center ;
+      }
+
+      .price-container {
+        padding: 40px 0;
+        color: $dark-font-color;
+        text-align: center;
+
+        .price{ 
+          font-size: 65px;
+          line-height: 1;
         }
       }
 
-      .price-text {
-        margin-top: 0;
-        color: #555555;
-        text-align: center;
-        margin-bottom: 0;
+      .pricing-breakup {  
+
+        .breakup-container {
+
+          display: flex;
+          
+          .icon {
+            flex: 1;
+            text-align: center;
+          } 
+          .details {
+            flex: 4;
+            text-align: left;
+          }
+        }
       }
-    }
-    .popular {
-      position: relative;
-      overflow: hidden;
-      &::after {
-        content: "Popular";
-        position: absolute;
-        font-size: 17px;
-        background-color: #ff0061;
-        color: white;
-        top: 2%;
-        right: -7%;
-        transform: rotate(50deg);
-        width: 80px;
-        text-align: center;
-        padding: 0.2rem;
-      }
-    }
-    .pricing-details-text {
-      display: flex;
-      color: #555555;
-      margin-left: 3px;
-      span {
-        margin-top: 3.5px;
-        margin-left: 3.5px;
-      }
-    }
-    .free-sign-up-btn-container {
-      padding: 1rem 1rem 2rem;
-      .free-sign-up-btn {
-        background-color: $primary-header-color;
-        color: white;
-        border: none;
-        padding: 0.4rem;
-        border-radius: 5px;
+
+      button {
+        margin: 30px auto;
+        display: block;
+        @include secondart-btn;
+        border-radius: 4px;
+        width: 90%;
+        font-size: 13px;
       }
     }
   }
+
   .sign-up-free-bg {
     background-color: #284152;
 

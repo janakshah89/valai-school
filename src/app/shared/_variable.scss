@@ -1,16 +1,20 @@
 $primary-font-color: #fff;
 $secondary-font-color: #FFC525;
 $default-font-color: #000;
+$dark-font-color: #555555;
+
 
 $primary-header-color: #0078BA;
 
 $primary-bg-color: transparent;
+$pricing-header-bg-color: aliceblue;
+$pricing-card-bg-color: #f7f7f7;
+$sache-bg-color: #FF0061;
 
 $primary-btn-color: #F9BE02;
+$seconday-btn-color: #0080BE;
+$dark-bg-color: #284152;
 
-$pricing-header-bg-color: aliceblue;
-
-$pricing-card-bg-color: #f7f7f7;
 
 
 
@@ -21,6 +25,16 @@ $pricing-card-bg-color: #f7f7f7;
     background-color: $primary-btn-color;
     margin-right: 10px;
 }
+
+@mixin secondart-btn {
+    @include valai-btn;
+    cursor: pointer;
+    color: $primary-font-color;
+    border-color: $seconday-btn-color;
+    background-color: $seconday-btn-color;
+    margin-right: 10px;
+}
+
 
 @mixin valai-btn {
     flex: 1;
