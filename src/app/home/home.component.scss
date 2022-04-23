@@ -1,5 +1,9 @@
 @import "./../shared/variable";
 
+.valai-color {
+    color: $valai-color;
+}
+
 .home-container {
     .sms{
         background: url('./../../assets/img/bg.png');
@@ -16,13 +20,13 @@
 
             .left-pane {
                 flex: 1;
-
+                
                 h2  {
                     margin: 0;
                     font-size: 54px;
                     color: $primary-font-color;
                     line-height: 1;
-                    margin-bottom: 20px;
+                    margin-bottom: 20px;    
                 }
 
                 h6 {
@@ -36,7 +40,7 @@
                     flex: 1;
                     justify-content: space-evenly;
                     align-items: center;
-
+        
                     button {
                         @include valai-btn;
                     }
@@ -52,6 +56,7 @@
             }
         }
     }
+
     .setup {
         text-align: center;
         display: flex;
@@ -93,7 +98,7 @@
             display: flex;
             align-items: center;
 
-            .admin-sw-details{
+            .admin-sw-details{ 
                 color: $primary-font-color;
                 flex: 1;
                 padding: 0 30px;
@@ -104,7 +109,7 @@
                     line-height: 40px;
                     margin-bottom: 30px;
                 }
-
+            
                 .desc {
                     font-size: 18px;
                     line-height: 27px;
@@ -135,14 +140,237 @@
             font-size: 40px;
             margin: 40px auto;
             line-height: 1;
+        }
 
-            .valai-color {
-                // color: $valai-color;
+        main {
+            display: flex;
+
+            .left-pane {
+                flex: 1; 
+                text-align: right;
+            }
+
+            img {
+                flex: 1;
+                margin: 0 auto;
+                max-height: 550px;
+            }
+
+            .right-pane {
+                flex: 1; 
+                text-align: left;
+            }
+
+            .left-pane , .right-pane {
+                article {
+                    margin-top: 38px;
+                    display: flex;
+                    align-items: center;
+
+                    div, i {
+                        flex: 1;
+                        font-size: 20px;
+                        line-height: 20px;
+                        margin: 0 3px;
+                    }
+
+                    div {
+                        flex: 20;
+                    }
+
+                    i {
+                        border: 2px solid red;
+                        border-radius: 50%;
+                        padding: 20px;
+                        text-align: center;
+
+                        &.orange {
+                            color: $icon-color-orange;
+                            border-color: $icon-color-orange;
+                        }
+                        &.pink {
+                            color: $icon-color-pink;
+                            border-color: $icon-color-pink;
+                        }
+                        &.turquoise {
+                            color: $icon-color-turquoise;
+                            border-color: $icon-color-turquoise;
+                        }
+                        &.cherry {
+                            color: $icon-color-cherry;
+                            border-color: $icon-color-cherry;
+                        }
+                        &.purple {
+                            color: $icon-color-purple;
+                            border-color: $icon-color-purple;
+                        }
+                        &.cyan {
+                            color: $icon-color-cyan;
+                            border-color: $icon-color-cyan;
+                        }
+
+                        &.fa-mobile, 
+                        &.fa-dollar,
+                        &.fa-lock {
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+
+            .left-pane {
+                article {
+                    div {
+                        text-align: right;
+                        margin-right: 8px;
+                    }
+                }
+            }
+
+            .right-pane {
+                article {
+                    div {
+                        text-align: left;
+                        margin-left: 8px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .more-sms { 
+        background-color: $grey-bg-color;
+        padding: 60px 0 100px;
+
+        .more-sms-wraper { 
+            margin: 0 auto;
+            max-width: 1140px;
+            padding: 20px 30px;
+            text-align: center;
+            
+            h2 {
+                margin: 0 0 60px 0;
+                font-size: 26px;
+            }
+
+            .features {
+                .row {
+                    display: flex;
+                    margin-top: 20px;
+
+                    .box {
+                        border-radius: 4px;
+                        border: 2px solid $grey-border-color;
+                        cursor: pointer;
+                        flex: 1;
+                        text-align: center;
+                        margin: 0 15px 0 0;
+                        padding: 20px;
+
+                        &:hover {
+                            border-color: $secondary-font-color;
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        .title {
+                            font-size: 22px;
+                            font-weight: 500;
+                            line-height: 26px;
+                            color: $input-label-font-color;
+                        }
+                        .desc {
+                            color: $input-label-font-color;
+                            font-size: 13px;
+                        }
+                    }
+                }
             }
         }
-        img {
+    }
+
+    .teacher {
+        background-image: url('../../assets/img/bg-new.png');
+        width: 100%;
+        background-size: cover;
+
+        .teacher-container{
             margin: 0 auto;
-            height: 500px;
+            max-width: 1140px;
+            padding: 40px 30px;
+            display: flex;
+            align-items: center;
+
+            .teacher-details{ 
+                color: $primary-font-color;
+                flex: 1;
+                padding: 0 30px;
+
+                .title {
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    margin-bottom: 60px;
+                    color: $default-font-color;
+                }
+            
+                .primary-btn {
+                    @include primary-btn;
+                    text-transform: uppercase;
+                }
+            }
+
+            img {
+                flex: 1;
+                height: 500px;
+                width: 500px;
+            }
         }
+    }
+
+    .erp {
+        background: $blue-bg-color;
+
+        .erp-container{
+            margin: 0 auto;
+            max-width: 1140px;
+            padding: 40px 30px;
+            display: flex;
+            align-items: center;
+
+            .erp-details{ 
+                color: $primary-font-color;
+                flex: 2 ;
+                padding: 0 30px;
+
+                .title {
+                    font-size: 28px;
+                    font-weight: 500;
+                    line-height: 40px;
+                    margin-bottom: 30px;
+                }
+            
+                .desc {
+                    font-size: 18px;
+                    line-height: 27px;
+                    margin-bottom: 40px;
+                }
+
+                .primary-btn {
+                    @include primary-btn;
+                    text-transform: uppercase;
+                }
+            }
+
+            img {
+                flex: 1;
+                height: 320px;
+                width: 540px;
+            }
+        }
+
     }
 }
