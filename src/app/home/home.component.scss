@@ -1,376 +1,473 @@
 @import "./../shared/variable";
 
 .valai-color {
-    color: $valai-color;
+  color: $valai-color;
 }
 
 .home-container {
-    .sms{
-        background: url('./../../assets/img/bg.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+  .sms {
+    background: url("./../../assets/img/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-        .sms-wrapper {
-            display: flex;
-            margin: 0 auto;
-            max-width: 1140px;
-            padding: 20px 30px;
-            align-content: center;
-            align-items: center;
+    .sms-wrapper {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 20px 30px;
+      align-content: center;
+      align-items: center;
 
-            .left-pane {
-                flex: 1;
-                
-                h2  {
-                    margin: 0;
-                    font-size: 54px;
-                    color: $primary-font-color;
-                    line-height: 1;
-                    margin-bottom: 20px;    
-                }
+      .left-pane {
+        flex: 1;
 
-                h6 {
-                    margin: 0;
-                    font-size: 22px;
-                    color: $primary-font-color;
-                    margin-bottom: 20px;
-                }
-
-                .btn-container {
-                    flex: 1;
-                    justify-content: space-evenly;
-                    align-items: center;
-        
-                    button {
-                        @include valai-btn;
-                    }
-
-                    .primary-btn {
-                        @include primary-btn;
-                    }
-                }
-            }
-
-            .right-pane {
-                flex: 1;
-            }
-        }
-    }
-
-    .setup {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        max-width: 1140px;
-        padding: 40px 30px;
-        margin: 0 auto;
-
-        .setup-details {
-            flex: 1;
-            text-align: left;
-            margin-left: 40px;
-            width: 70%;
-
-            .title {
-                font-size: 30px;
-                font-weight: 500;
-                line-height: 40px;
-            }
-            hr {
-                border: 1px solid $secondary-font-color;
-                margin: 30px 0;
-                width: 30%;
-            }
-            .desc {
-                font-size: 18px;
-                line-height: 27px;
-            }
-        }
-    }
-
-    .admin-sw {
-        background: $dark-bg-color;
-
-        .admin-sw-container{
-            margin: 0 auto;
-            max-width: 1140px;
-            padding: 20px 30px;
-            display: flex;
-            align-items: center;
-
-            .admin-sw-details{ 
-                color: $primary-font-color;
-                flex: 1;
-                padding: 0 30px;
-
-                .title {
-                    font-size: 28px;
-                    font-weight: 500;
-                    line-height: 40px;
-                    margin-bottom: 30px;
-                }
-            
-                .desc {
-                    font-size: 18px;
-                    line-height: 27px;
-                    margin-bottom: 40px;
-                }
-
-                .primary-btn {
-                    @include primary-btn;
-                    text-transform: uppercase;
-                }
-            }
-
-            img {
-                height: 400px;
-                width: 540px;
-            }
+        h2 {
+          margin: 0;
+          font-size: 54px;
+          color: $primary-font-color;
+          line-height: 1;
+          margin-bottom: 20px;
         }
 
-    }
+        h6 {
+          margin: 0;
+          font-size: 22px;
+          color: $primary-font-color;
+          margin-bottom: 20px;
+        }
 
-    .why-valai {
-        text-align: center;
-        margin: 0 auto;
-        max-width: 1140px;
-        padding: 20px 30px 80px;
+        .btn-container {
+          flex: 1;
+          justify-content: space-evenly;
+          align-items: center;
+
+          button {
+            @include valai-btn;
+          }
+
+          .primary-btn {
+            @include primary-btn;
+          }
+        }
+      }
+
+      .right-pane {
+        flex: 1;
+      }
+    }
+  }
+
+  .setup {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    padding: 40px 30px;
+    margin: 0 auto;
+
+    .setup-details {
+      flex: 1;
+      text-align: left;
+      margin-left: 40px;
+      width: 70%;
+
+      .title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+      }
+      hr {
+        border: 1px solid $secondary-font-color;
+        margin: 30px 0;
+        width: 30%;
+      }
+      .desc {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
+  }
+
+  .admin-sw {
+    background: $dark-bg-color;
+
+    .admin-sw-container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+
+      .admin-sw-details {
+        color: $primary-font-color;
+        flex: 1;
+        padding: 0 30px;
 
         .title {
-            font-size: 40px;
-            margin: 40px auto;
-            line-height: 1;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 40px;
+          margin-bottom: 30px;
         }
 
-        main {
-            display: flex;
-
-            .left-pane {
-                flex: 1; 
-                text-align: right;
-            }
-
-            img {
-                flex: 1;
-                margin: 0 auto;
-                max-height: 550px;
-            }
-
-            .right-pane {
-                flex: 1; 
-                text-align: left;
-            }
-
-            .left-pane , .right-pane {
-                article {
-                    margin-top: 38px;
-                    display: flex;
-                    align-items: center;
-
-                    div, i {
-                        flex: 1;
-                        font-size: 20px;
-                        line-height: 20px;
-                        margin: 0 3px;
-                    }
-
-                    div {
-                        flex: 20;
-                    }
-
-                    i {
-                        border: 2px solid red;
-                        border-radius: 50%;
-                        padding: 20px;
-                        text-align: center;
-
-                        &.orange {
-                            color: $icon-color-orange;
-                            border-color: $icon-color-orange;
-                        }
-                        &.pink {
-                            color: $icon-color-pink;
-                            border-color: $icon-color-pink;
-                        }
-                        &.turquoise {
-                            color: $icon-color-turquoise;
-                            border-color: $icon-color-turquoise;
-                        }
-                        &.cherry {
-                            color: $icon-color-cherry;
-                            border-color: $icon-color-cherry;
-                        }
-                        &.purple {
-                            color: $icon-color-purple;
-                            border-color: $icon-color-purple;
-                        }
-                        &.cyan {
-                            color: $icon-color-cyan;
-                            border-color: $icon-color-cyan;
-                        }
-
-                        &.fa-mobile, 
-                        &.fa-dollar,
-                        &.fa-lock {
-                            font-size: 25px;
-                        }
-                    }
-                }
-            }
-
-            .left-pane {
-                article {
-                    div {
-                        text-align: right;
-                        margin-right: 8px;
-                    }
-                }
-            }
-
-            .right-pane {
-                article {
-                    div {
-                        text-align: left;
-                        margin-left: 8px;
-                    }
-                }
-            }
-
+        .desc {
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 40px;
         }
+
+        .primary-btn {
+          @include primary-btn;
+          text-transform: uppercase;
+        }
+      }
+
+      img {
+        height: 400px;
+        width: 540px;
+      }
+    }
+  }
+
+  .why-valai {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 20px 30px 80px;
+
+    .title {
+      font-size: 40px;
+      margin: 40px auto;
+      line-height: 1;
     }
 
-    .more-sms { 
-        background-color: $grey-bg-color;
-        padding: 60px 0 100px;
+    main {
+      display: flex;
 
-        .more-sms-wraper { 
-            margin: 0 auto;
-            max-width: 1140px;
-            padding: 20px 30px;
+      .left-pane {
+        flex: 1;
+        text-align: right;
+      }
+
+      img {
+        flex: 1;
+        margin: 0 auto;
+        max-height: 550px;
+      }
+
+      .right-pane {
+        flex: 1;
+        text-align: left;
+      }
+
+      .left-pane,
+      .right-pane {
+        article {
+          margin-top: 38px;
+          display: flex;
+          align-items: center;
+
+          div,
+          i {
+            flex: 1;
+            font-size: 20px;
+            line-height: 20px;
+            margin: 0 3px;
+          }
+
+          div {
+            flex: 20;
+          }
+
+          i {
+            border: 2px solid red;
+            border-radius: 50%;
+            padding: 20px;
             text-align: center;
-            
-            h2 {
-                margin: 0 0 60px 0;
-                font-size: 26px;
+
+            &.orange {
+              color: $icon-color-orange;
+              border-color: $icon-color-orange;
+            }
+            &.pink {
+              color: $icon-color-pink;
+              border-color: $icon-color-pink;
+            }
+            &.turquoise {
+              color: $icon-color-turquoise;
+              border-color: $icon-color-turquoise;
+            }
+            &.cherry {
+              color: $icon-color-cherry;
+              border-color: $icon-color-cherry;
+            }
+            &.purple {
+              color: $icon-color-purple;
+              border-color: $icon-color-purple;
+            }
+            &.cyan {
+              color: $icon-color-cyan;
+              border-color: $icon-color-cyan;
             }
 
-            .features {
-                .row {
-                    display: flex;
-                    margin-top: 20px;
-
-                    .box {
-                        border-radius: 4px;
-                        border: 2px solid $grey-border-color;
-                        cursor: pointer;
-                        flex: 1;
-                        text-align: center;
-                        margin: 0 15px 0 0;
-                        padding: 20px;
-
-                        &:hover {
-                            border-color: $secondary-font-color;
-                        }
-
-                        &:last-child {
-                            margin: 0;
-                        }
-
-                        .title {
-                            font-size: 22px;
-                            font-weight: 500;
-                            line-height: 26px;
-                            color: $input-label-font-color;
-                        }
-                        .desc {
-                            color: $input-label-font-color;
-                            font-size: 13px;
-                        }
-                    }
-                }
+            &.fa-mobile,
+            &.fa-dollar,
+            &.fa-lock {
+              font-size: 25px;
             }
+          }
         }
-    }
+      }
 
-    .teacher {
-        background-image: url('../../assets/img/bg-new.png');
+      .left-pane {
+        article {
+          div {
+            text-align: right;
+            margin-right: 8px;
+          }
+        }
+      }
+
+      .right-pane {
+        article {
+          div {
+            text-align: left;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .more-sms {
+    background-color: $grey-bg-color;
+    padding: 60px 0 100px;
+
+    .more-sms-wraper {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 20px 30px;
+      text-align: center;
+
+      h2 {
+        margin: 0 0 60px 0;
+        font-size: 26px;
+      }
+
+      .features {
+        .row {
+          display: flex;
+          margin-top: 20px;
+          flex-wrap: wrap;
+          gap: 15px;
+
+          .box {
+            border-radius: 4px;
+            border: 2px solid $grey-border-color;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            // margin: 0 15px 0 0;
+            padding: 20px;
+            &:hover {
+              border-color: $secondary-font-color;
+            }
+
+            &:last-child {
+              margin: 0;
+            }
+
+            .title {
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 26px;
+              color: $input-label-font-color;
+            }
+            .desc {
+              color: $input-label-font-color;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .teacher {
+    background-image: url("../../assets/img/bg-new.png");
+    width: 100%;
+    background-size: cover;
+
+    .teacher-container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 40px 30px;
+      display: flex;
+      align-items: center;
+
+      .teacher-details {
+        color: $primary-font-color;
+        flex: 1;
+        padding: 0 30px;
+
+        .title {
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 40px;
+          margin-bottom: 60px;
+          color: $default-font-color;
+        }
+
+        .primary-btn {
+          @include primary-btn;
+          text-transform: uppercase;
+        }
+      }
+
+      img {
+        flex: 1;
+        height: 500px;
+        width: 500px;
+      }
+    }
+  }
+
+  .erp {
+    background: $blue-bg-color;
+
+    .erp-container {
+      margin: 0 auto;
+      max-width: 1140px;
+      padding: 40px 30px;
+      display: flex;
+      align-items: center;
+
+      .erp-details {
+        color: $primary-font-color;
+        flex: 2;
+        padding: 0 30px;
+
+        .title {
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 40px;
+          margin-bottom: 30px;
+        }
+
+        .desc {
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 40px;
+        }
+
+        .primary-btn {
+          @include primary-btn;
+          text-transform: uppercase;
+        }
+      }
+
+      img {
+        flex: 1;
+        height: 320px;
+        width: 540px;
+      }
+    }
+  }
+}
+
+@media (max-width: 958px) {
+  .sms-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .right-pane {
+      height: 50%;
+
+      img {
         width: 100%;
-        background-size: cover;
+      }
+    }
+  }
 
-        .teacher-container{
-            margin: 0 auto;
-            max-width: 1140px;
-            padding: 40px 30px;
-            display: flex;
-            align-items: center;
-
-            .teacher-details{ 
-                color: $primary-font-color;
-                flex: 1;
-                padding: 0 30px;
-
-                .title {
-                    font-size: 28px;
-                    font-weight: 500;
-                    line-height: 40px;
-                    margin-bottom: 60px;
-                    color: $default-font-color;
-                }
-            
-                .primary-btn {
-                    @include primary-btn;
-                    text-transform: uppercase;
-                }
-            }
-
-            img {
-                flex: 1;
-                height: 500px;
-                width: 500px;
-            }
-        }
+  .setup {
+    flex-direction: column;
+    gap: 1rem;
+    iframe {
+      width: 100%;
     }
 
-    .erp {
-        background: $blue-bg-color;
-
-        .erp-container{
-            margin: 0 auto;
-            max-width: 1140px;
-            padding: 40px 30px;
-            display: flex;
-            align-items: center;
-
-            .erp-details{ 
-                color: $primary-font-color;
-                flex: 2 ;
-                padding: 0 30px;
-
-                .title {
-                    font-size: 28px;
-                    font-weight: 500;
-                    line-height: 40px;
-                    margin-bottom: 30px;
-                }
-            
-                .desc {
-                    font-size: 18px;
-                    line-height: 27px;
-                    margin-bottom: 40px;
-                }
-
-                .primary-btn {
-                    @include primary-btn;
-                    text-transform: uppercase;
-                }
-            }
-
-            img {
-                flex: 1;
-                height: 320px;
-                width: 540px;
-            }
-        }
-
+    .setup-details{
+      .title{
+        width: 100% !important;
+      }
     }
+  }
+
+  .admin-sw-container {
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      width: 70% !important;
+    }
+  }
+
+  main {
+    flex-direction: column;
+
+    img {
+      width: 50% !important;
+    }
+
+    article {
+      width: 50%;
+      margin: auto;
+      align-items: center;
+      justify-content: center !important;
+      div {
+        text-align: center !important;
+      }
+      i {
+        margin: auto;
+      }
+    }
+  }
+
+  .teacher-container {
+    flex-direction: column;
+    gap: 1rem;
+    img {
+      width: 70% !important;
+    }
+  }
+
+  .erp-container {
+    flex-direction: column;
+    img {
+      width: 70% !important;
+    }
+  }
+}
+@media (max-width: 630px) {
+  .admin-sw-container,
+  .teacher-container,
+  .erp-container {
+    img {
+      width: 100% !important;
+    }
+  }
+  .features {
+    .row {
+      max-width: 210px;
+      margin: auto;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .btn-container {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+  }
 }
