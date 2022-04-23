@@ -11,6 +11,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PartnersComponent } from './partners/partners.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { PricingComponent } from './pricing/pricing.component';
+import { FaqComponent } from './faq/faq.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { PricingComponent } from './pricing/pricing.component';
     FooterComponent,
     HomeComponent,
     PartnersComponent,
-    PricingComponent
+    PricingComponent,
+    FaqComponent,
+    PrivacyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,

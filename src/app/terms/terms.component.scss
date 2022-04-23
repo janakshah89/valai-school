@@ -1,0 +1,39 @@
+@import "./../shared/variable";
+.terms {
+    margin: 30px auto;
+    max-width: 1140px;
+    padding: 20px 40px;
+    align-content: center;
+
+    h2 {
+        font-size: 28px;
+        line-height: 28px;
+        font-weight:500;
+        color: $input-label-font-color;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    p, ul li {
+        color: $input-label-font-color;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+        strong {
+            color: $input-label-font-color;
+            font-size: 24px;
+            line-height: 29px;
+            font-weight: 700;
+        }
+    }
+
+    a {
+        color: $secondary-font-color;
+        text-decoration: none;
+    }
+}
