@@ -69,6 +69,17 @@
         .price{ 
           font-size: 65px;
           line-height: 1;
+          font-weight: 800;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+
+          .dollar {
+            font-size: 20px;
+            font-weight: 800;
+            display: inline-block;
+            margin-top: 10px;
+          }
         }
       }
 
@@ -192,6 +203,7 @@
     }
   }
 }
+
 @media (max-width: 852px){
   .pricing-card-container{
     justify-content: space-between;
@@ -202,4 +214,25 @@
       flex: 1;
     }
   }
+}
+
+@media (max-width: 630px) {
+
+  .pricing-container {
+
+    .pricing-banner {
+      display: block;
+      
+      .banner {
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+      } 
+    }
+
+    .pricing-features-container {
+      padding: 0 30px;
+    }
+  }
+
 }

@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 40px;
+    overflow: hidden;
 
     .footer-wrapper {
         display: flex;
@@ -96,6 +97,10 @@
             section {
                 width: 100%;
                 margin-bottom: 20px;
+
+                div {
+                    width: 90%;
+                }
 
                 nav ul {
                     li {
