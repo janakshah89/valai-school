@@ -3,6 +3,7 @@ $secondary-font-color: #FFC525;
 $default-font-color: #000;
 $dark-font-color: #555555;
 $input-label-font-color: #212529;
+$dark-font-color2: #333;
 $blue-font-color: #2b79a7;
 $valai-color: #a72f1e;
 $header-color: #2c78a7;
@@ -19,10 +20,12 @@ $light2-bg-color: #ebf8fb;
 $grey-bg-color: #EDF0F7;
 $blue-bg-color: #0097E3;
 $grey-bg-color: #f5f5f5;
+$dark-bg-color: #284152;
+$alice-blue-bg-color: #f0f8fb;
 
 $primary-btn-color: #F9BE02;
 $seconday-btn-color: #0080BE;
-$dark-bg-color: #284152;
+$green-btn: #00ad24;
 
 $icon-color-orange: #FF724C;
 $icon-color-pink: #FA6FD1;
@@ -32,6 +35,8 @@ $icon-color-purple: #961276;
 $icon-color-cyan: #21C7FD;
 
 $image-border-color: #bfbfbf;
+
+$underline-color: #e5e9eb;
 
 @mixin primary-btn {
     @include valai-btn;

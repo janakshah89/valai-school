@@ -16,6 +16,7 @@ import { FaqComponent } from './faq/faq.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { SignupComponent } from './signup/signup.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SignupComponent } from './signup/signup.component';
     FaqComponent,
     PrivacyComponent,
     TermsComponent,
-    SignupComponent
+    SignupComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,116 @@
+@import "./../shared/variable";
+
+.blog-container{
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  gap: 2rem;
+  flex-direction: row;
+
+  .blog-content{
+    flex:1.2;
+
+    .blog-content-header{
+      color: $primary-header-color;
+      font-size: 32px;
+      font-family: "Poppins",sans-serif;
+      text-align: justify;
+    }
+
+    .blog-content-sub-header{
+      color: $input-label-font-color;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px;
+      text-align: justify;
+    }
+
+    .blog-content-text{
+      font-size: 16px;
+      color: $input-label-font-color;
+      font-family: "Poppins",sans-serif;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .read-more-btn{
+      background-color: $green-btn;
+      color: $primary-font-color;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-family: "Poppins",sans-serif;
+      font-weight: 400;
+    }
+
+    .bottom-text{
+      margin-top: 1rem;
+      font-size: 16px;
+      color: $input-label-font-color;
+      font-family: "Poppins",sans-serif;
+      line-height: 1.5;
+      text-align: justify;
+
+      a{
+        color: $primary-header-color;
+        text-decoration: none;
+      }
+    }
+
+  }
+
+  .recent-articles{
+    flex: 0.8;
+    padding: 20px;
+    background-color: $alice-blue-bg-color;
+    display: flex;
+    flex-direction: column;
+    // max-width: 300px;
+
+    h2{
+      position: relative;
+      font-size: 24px;
+      font-family: "Poppins",sans-serif;
+      color: $dark-font-color2;
+      width: fit-content;
+
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $secondary-font-color;
+        left: 0;
+      }
+    }
+
+    a{
+      position: relative;
+      padding: 20px 0;
+      text-decoration: none;
+      color: $primary-header-color;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: 520;
+
+      &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $underline-color;
+        left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 840px){
+
+  .blog-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
