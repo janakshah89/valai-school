@@ -14,6 +14,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TermsComponent } from './terms/terms.component';
     PricingComponent,
     FaqComponent,
     PrivacyComponent,
-    TermsComponent
+    TermsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

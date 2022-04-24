@@ -49,6 +49,11 @@
 
           .primary-btn {
             @include primary-btn;
+
+            a {
+              text-decoration: none;
+              color: $default-font-color;
+            }
           }
         }
       }
@@ -121,6 +126,11 @@
         .primary-btn {
           @include primary-btn;
           text-transform: uppercase;
+
+          a {
+            text-decoration: none;
+            color: $default-font-color;
+          }
         }
       }
 
