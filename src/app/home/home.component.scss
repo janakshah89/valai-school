@@ -265,6 +265,9 @@
             border-radius: 4px;
             border: 2px solid $grey-border-color;
             cursor: pointer;
+            max-width: 20%;
+            min-width: 160px;
+            margin: 0 auto !important;
             flex: 1;
             text-align: center;
             // margin: 0 15px 0 0;
@@ -393,6 +396,7 @@
   .setup {
     flex-direction: column;
     gap: 1rem;
+
     iframe {
       width: 100%;
     }
@@ -425,28 +429,35 @@
       margin: auto;
       align-items: center;
       justify-content: center !important;
+
       div {
         text-align: center !important;
       }
+
       i {
         margin: auto;
       }
+
     }
   }
 
   .teacher-container {
     flex-direction: column;
     gap: 1rem;
+
     img {
       width: 70% !important;
     }
+
   }
 
   .erp-container {
     flex-direction: column;
+
     img {
       width: 70% !important;
     }
+
   }
 }
 @media (max-width: 630px) {
@@ -456,12 +467,18 @@
     img {
       width: 100% !important;
     }
+
   }
   .features {
+
     .row {
       max-width: 210px;
       margin: auto;
+      .box{
+        max-width: 100% !important;
+      }
     }
+
   }
 }
 @media (max-width: 360px) {

@@ -14,6 +14,7 @@ $sache-bg-color: #FF0061;
 $light-bg-color: #EFF8FB;
 $grey-bg-color: #EDF0F7;
 $blue-bg-color: #0097E3;
+$grey-bg-color: #f5f5f5;
 
 $primary-btn-color: #F9BE02;
 $seconday-btn-color: #0080BE;
@@ -25,6 +26,8 @@ $icon-color-turquoise: #33DABD;
 $icon-color-cherry: #FA6666;
 $icon-color-purple: #961276;
 $icon-color-cyan: #21C7FD;
+
+$image-border-color: #bfbfbf;
 
 @mixin primary-btn {
     @include valai-btn;
