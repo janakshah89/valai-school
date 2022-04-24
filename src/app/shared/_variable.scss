@@ -44,6 +44,14 @@ $underline-color: #e5e9eb;
     color: $default-font-color;
     background-color: $primary-btn-color;
     margin-right: 10px;
+
+    &:hover {
+        background-color: $blue-bg-color;
+        border-color: $blue-bg-color;
+        * {
+            color: $primary-font-color;
+        }
+    }
 }
 
 @mixin secondart-btn {
