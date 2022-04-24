@@ -35,8 +35,11 @@ $icon-color-purple: #961276;
 $icon-color-cyan: #21C7FD;
 
 $image-border-color: #bfbfbf;
+$input-border-color: #ced4da;
 
 $underline-color: #e5e9eb;
+
+$box-shadow-color: #bdbdbd;
 
 @mixin primary-btn {
     @include valai-btn;

@@ -1,3 +1,4 @@
+import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -17,6 +18,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { SignupComponent } from './signup/signup.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import { BlogComponent } from './blog/blog.component';
     PrivacyComponent,
     TermsComponent,
     SignupComponent,
-    BlogComponent
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { BlogComponent } from './blog/blog.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

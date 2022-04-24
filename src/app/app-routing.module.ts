@@ -9,12 +9,14 @@ import { FaqComponent } from './faq/faq.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { TermsComponent } from './terms/terms.component';
 import { SignupComponent } from './signup/signup.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', component: HomeComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'partners', component: PartnersComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'faq', component: FaqComponent },
   { path: 'privacy', component: PrivacyComponent },
