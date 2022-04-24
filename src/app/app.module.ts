@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PartnersComponent } from './partners/partners.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { PricingComponent } from './pricing/pricing.component';
+import { ContactComponent } from './contact/contact.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { PricingComponent } from './pricing/pricing.component';
     FooterComponent,
     HomeComponent,
     PartnersComponent,
-    PricingComponent
+    PricingComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,11 @@ import { PricingComponent } from './pricing/pricing.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatIconModule,
+    MatCardModule,
+  //   AgmCoreModule.forRoot({
+  //     apiKey: ''
+  //   })
+  // ]
   ],
   providers: [],
   bootstrap: [AppComponent]
