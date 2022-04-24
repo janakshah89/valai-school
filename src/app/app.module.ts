@@ -12,6 +12,10 @@ import { PartnersComponent } from './partners/partners.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { PricingComponent } from './pricing/pricing.component';
 import { FeaturesComponent } from './features/features.component';
+import { FaqComponent } from './faq/faq.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { FeaturesComponent } from './features/features.component';
     HomeComponent,
     PartnersComponent,
     PricingComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    FaqComponent,
+    PrivacyComponent,
+    TermsComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

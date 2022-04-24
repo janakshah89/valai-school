@@ -32,13 +32,14 @@
                     list-style: none !important;
                     margin: 0;
                     text-align: center;
-
+                    
                     a {
                         color: $primary-font-color;
                         font-size: 15px;
                         padding-top: 15px;
                         padding-bottom: 15px;
                         text-decoration: none;;
+                        cursor: pointer;
                     }
                 }
             }
@@ -50,6 +51,11 @@
 
             button {
                 @include primary-btn;
+
+                a {
+                    text-decoration: none;
+                    color: $default-font-color;
+                }
             }
         }
     }

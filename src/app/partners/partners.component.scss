@@ -2,8 +2,7 @@
 
 .partner-container {
   display: flex;
-  background-color: #ebf8fb;
-  // height: 7rem;
+  background-color: $light2-bg-color;
   width: 100%;
 
   .partner-wrapper {
@@ -13,7 +12,7 @@
     text-align: center;
 
     h2 {
-      color: #2c78a7;
+      color: $header-color;
       font-weight: 500 !important;
       font-size: 30px;
       font-family: "Poppins", sans-serif;
@@ -161,7 +160,8 @@
 
     .partner-information,
     .partner-form {
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }
